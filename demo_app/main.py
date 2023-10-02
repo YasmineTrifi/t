@@ -10,6 +10,8 @@ from nltk.stem import WordNetLemmatizer
 from textblob import TextBlob
 from fastapi.middleware.cors import CORSMiddleware
 
+nltk.download('stopwords')
+
 job_postings = pd.read_csv('job_postings.csv')
 
 stop_words = set(stopwords.words('english'))
