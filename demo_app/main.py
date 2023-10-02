@@ -12,6 +12,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 nltk.download('stopwords')
 nltk.download('punkt')
+nltk.download('wordnet')
 
 job_postings = pd.read_csv('job_postings.csv')
 
