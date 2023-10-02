@@ -11,6 +11,7 @@ from textblob import TextBlob
 from fastapi.middleware.cors import CORSMiddleware
 
 nltk.download('stopwords')
+nltk.download('punkt')
 
 job_postings = pd.read_csv('job_postings.csv')
 
